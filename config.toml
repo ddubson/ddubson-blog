@@ -1,0 +1,15 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+theme = "m10c"
+title = "Dmitriy Dubson | Blog |"
+
+[params]
+    author = "Dmitriy Dubson"
+    description = "Sr. Software Engineer @ Pivotal"
+    [[params.social]]
+    name = "github"
+    url = "https://github.com/ddubson"
+
+    [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/DmitriyAtHome"
