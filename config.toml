@@ -6,6 +6,11 @@ title = "Dmitriy Dubson | Blog |"
 [params]
     author = "Dmitriy Dubson"
     description = "Sr. Software Engineer @ Pivotal"
+
+    [params.notes]
+    description = "Technical Notes"
+    url = "https://notes.dmitriydubson.com"
+
     [[params.social]]
     name = "github"
     url = "https://github.com/ddubson"

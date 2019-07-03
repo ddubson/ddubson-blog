@@ -2,6 +2,8 @@
 # Created by https://www.gitignore.io/api/hugo
 # Edit at https://www.gitignore.io/?templates=hugo
 
+.idea
+
 ### Hugo ###
 # Generated files by hugo
 /public/
