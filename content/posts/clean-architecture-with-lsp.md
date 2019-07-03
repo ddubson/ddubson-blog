@@ -19,7 +19,7 @@ Here’s a high level policy for ordering a product from an online store:
 
 This high level description of the steps that need to be done to place an order can be expressed in the following code
 
-```kotlin
+{{<highlight kotlin>}}
 class OrderProductUseCase(private val inventoryService: InventoryService,
                           private val shippingService: ShippingService,
                           private val paymentService: PaymentService) {
@@ -34,23 +34,23 @@ class OrderProductUseCase(private val inventoryService: InventoryService,
         }
     }
 }
-```
+{{</highlight>}}
 
 As you scan through the code, you might notice that there are no specific details about what is entailed in placing an order, rather what is described is how an order is placed. The how is the ‘low level details’ part. The details are hidden behind contracts, `InventoryService`, `ShippingService`, and `PaymentService` in our case.
 
 As an example, the contract for the inventory service as dictated by the high level policy above is the following:
 
-```kotlin
+{{<highlight kotlin>}}
 interface InventoryService {
     fun isInStock(productId: Long): Boolean
 
     fun reserveProduct(product: Product)
 }
-```
+{{</highlight>}}
 
 What would be an implementation of a contract? Here’s a really simple one for the inventory service:
 
-```kotlin
+{{<highlight kotlin>}}
 class CompanyDataWarehouseInventoryService: InventoryService {
     override fun isInStock(productId: Long): Boolean {
         return true
@@ -60,13 +60,13 @@ class CompanyDataWarehouseInventoryService: InventoryService {
         println("Reserved product!")
     }
 }
-```
+{{</highlight>}}
 
 The high level policy above is only interested in the contract. It does not care about details.
 
 If the high level policy does not care about the details (implementations), then what does? To connect the policy to the details, that is where the application is built up from a set of contract implementations. An example of driver code might be:
 
-```kotlin
+{{<highlight kotlin>}}
 fun main() {
     val paymentService: PaymentService = CompanyPaymentService()
     val shippingService: ShippingService = CompanyShippingService()
@@ -77,7 +77,7 @@ fun main() {
     val order = ProductOrder(1L)
     orderProductUseCase.placeOrder(customer, order)
 }
-```
+{{</highlight>}}
 
 This is a very simplified implementation that illustrates the build up of the system from scratch. Most commonly you would use a dependency injection container such as Spring or Dagger to maintain object instances in the system.
 

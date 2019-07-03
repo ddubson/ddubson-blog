@@ -36,12 +36,12 @@ Processor<T, R>
 
 The JDK 9 Flow API lays out very similar (read: identical) contracts, also in four parts:
 
-```
+{{<highlight java>}}
 Flow.Publisher<T>
 Flow.Subscriber<T>
 Flow.Subscription
 Flow.Processor<T, R>
-```
+{{</highlight>}}
 
 JDK 9 Flow API, as the name suggests, is only available in Java 9 and above, whereas Reactive Streams JVM API is supported by Java 6 and above, which allows much wider adoption.
 
@@ -82,25 +82,25 @@ A Mono of one integer
 
 > The examples that follow are written in Kotlin
 
-```kotlin
+{{<highlight kotlin>}}
 import reactor.core.publisher.Mono
 
 val monoOfInteger: Mono<Int> = Mono.just(123)
 
 // subscribe to Mono since it does not push unless subscribed to
 monoOfInteger.subscribe { intInStream -> println(intInStream) }
-```
+{{</highlight>}}
 
 A Mono of no integers (no objects in the stream)
 
-```kotlin
+{{<highlight kotlin>}}
 import reactor.core.publisher.Mono
 
 val streamOfNoIntegers: Mono<Int> = Mono.empty()
 
 // subscribe to the Mono but it will not do anything since it is empty
 streamOfNoIntegers.subscribe { intInStream -> println(intInStream) }
-```
+{{</highlight>}}
 
 ## Flux
 
@@ -110,28 +110,28 @@ A `Flux` is a type of Publisher that can publish either many objects (potentiall
 
 A Flux of a discrete amount of integers
 
-```kotlin
+{{<highlight kotlin>}}
 import reactor.core.publisher.Flux
 
 val fluxOfIntegers: Flux<Int> = Flux.just(9,8,7,6,5,4,3,2,1)
 fluxOfIntegers.subscribe { intInStream -> println(intInStream)}
-```
+{{</highlight>}}
 
 A Flux of no integers (no objects in the stream)
 
-```kotlin
+{{<highlight kotlin>}}
 import reactor.core.publisher.Flux
 
 val fluxOfNoIntegers: Flux<Int> = Flux.empty()
 
 // subscribe to the Flux but it will not do anything since it is empty
 fluxOfNoIntegers.subscribe { intInStream -> println(intInStream)}
-```
+{{</highlight>}}
 
 A Flux of continuous data (endless), with a delay of 300ms between each publish
 event
 
-```kotlin
+{{<highlight kotlin>}}
 import reactor.core.publisher.Flux
 import java.time.Duration
 import kotlin.random.Random.Default.nextInt
@@ -141,6 +141,6 @@ val fluxOfIntegers: Flux<Int> = Flux.generate { sink -> sink.next(nextInt()) }
 fluxOfIntegers
     .delayElements(Duration.ofMillis(300))
     .subscribe { intInStream -> println(intInStream)}
-```
+{{</highlight>}}
 
 `Flux` and `Mono` are publishers equipped with the ability to react to how subscribers accept the data. The concept of backpressure is introduced in Reactive Streams API that allows subscribers to dictate the amount of traffic they can handle and at what pace, so the subscriber is never overloaded by the amount of objects the publisher produces. When a `Subscription` is established between a `Publisher` and `Subscriber`, the subscriber demands data through the subscription which the publisher honors. Via the `Subscription` contract, control of the flow of data is established.

@@ -18,7 +18,7 @@ of gcc compiler).
 
 **Example Makefile**
 
-```makefile
+{{<highlight bash>}}
 CC=gcc
 LDFLAGS=-lstdc++ -lpqxx -lpq
 
@@ -26,14 +26,14 @@ all: main
 
 main:
 	$(CC) $(LDFLAGS) main.cpp -o main
-```
+{{</highlight>}}
 
 In CMake, to make the same configuration viable, here is a way that `CMakeLists.txt`
 can be configured to produce the same result:
 
 **Example CMakeLists.txt**
 
-```makefile
+{{<highlight bash>}}
 cmake_minimum_required(VERSION 3.13)
 project(cpp_example)
 
@@ -45,4 +45,4 @@ set(CMAKE_CXX_COMPILER gcc)
 set(CMAKE_EXE_LINKER_FLAGS "-lstdc++ -lpqxx -lpq")
 
 add_executable(cpp_example main.cpp)
-```
+{{</highlight>}}
