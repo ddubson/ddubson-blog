@@ -1,7 +1,7 @@
 ---
 title: "Setting linker flags in CMake"
 date: 2019-01-08T10:00:00-04:00
-draft: true
+draft: false
 tags: ["CMake", "C++", "Linking libraries", "CMakeLists.txt", "LDFLAGS"]
 ---
 
