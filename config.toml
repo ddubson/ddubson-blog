@@ -5,7 +5,7 @@ title = "Dmitriy Dubson | Blog |"
 
 [params]
     author = "Dmitriy Dubson"
-    description = "Sr. Software Engineer @ Pivotal"
+    description = "Senior Software Engineer"
 
     [params.notes]
     description = "Technical Notes"
