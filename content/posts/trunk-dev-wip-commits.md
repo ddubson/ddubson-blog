@@ -1,36 +1,36 @@
 ---
 title: "Save with WIP: a git technique in Trunk-Based Development"
-description: "hello"
+description: ""
 date: 2019-08-04T10:21:07-04:00
 draft: false
 ---
 
-When building a software product on a team, to create an effective and sustainable development flow, one needs to abide 
-by a version control branching model that is agreed upon all team members. If there is a chosen approach to branching, 
+When building a software product on a team, to create an effective and sustainable development flow, one needs to abide
+by a version control branching model that is agreed upon all team members. If there is a chosen approach to branching,
 individual contributors on a team can contribute code without issue.
 
-In this post, I want to focus on a specific technique within a specific branching model that I believe is quite 
+In this post, I want to focus on a specific technique within a specific branching model that I believe is quite
 effective at keeping each contributor productive without introducing cognitive overhead of a complex branching model.
 
-The branching model being [Trunk-Based Development](https://trunkbaseddevelopment.com/) and the technique that I'll 
+The branching model being [Trunk-Based Development](https://trunkbaseddevelopment.com/) and the technique that I'll
 refer to as **"Save with WIP"**, where WIP stands for Work-In-Progress.
 
-Trunk-Based Development model encourages merging to the 'trunk' (think of a tree trunk that all branches spring from) 
-as often as possible and keeping branches short-lived: no more than a day or so if possible. We claim 'master' branch 
+Trunk-Based Development model encourages merging to the 'trunk' (think of a tree trunk that all branches spring from)
+as often as possible and keeping branches short-lived: no more than a day or so if possible. We claim 'master' branch
 as the trunk.
 
 > Read more about the benefits of [Trunk Based Development](https://trunkbaseddevelopment.com/)
 
-To that effect, the technique **"Save with WIP"** encourages small save commits that are temporary and will never make 
-it to the trunk, i.e. 'master' branch. This technique helps us create checkpoints at some predetermined stopping points 
-in your development flow. I think of cases when I have to leave for the day or go to a meeting at a not-so-clean point 
+To that effect, the technique **"Save with WIP"** encourages small save commits that are temporary and will never make
+it to the trunk, i.e. 'master' branch. This technique helps us create checkpoints at some predetermined stopping points
+in your development flow. I think of cases when I have to leave for the day or go to a meeting at a not-so-clean point
 in my feature story.
 
 Here's how it goes.
 
 ## Save with WIP
 
-Clone the git repository as the first step if you don't already have it on your machine. I'm using a fake git 
+Clone the git repository as the first step if you don't already have it on your machine. I'm using a fake git
 repository to drive out this example alongside a phantom product.
 
 {{<highlight bash>}}
@@ -78,7 +78,7 @@ After some time, we might need to create more WIP commits like so:
 
 ![](/images/trunk-dev-wip-commits/git-hist-3.svg)
 
-On the left, we can see that the history of origin/master has advanced. This is to represent that 
+On the left, we can see that the history of origin/master has advanced. This is to represent that
 other developers on the team have merged their code changes to remote master. We will reconcile these
 changes below.
 
@@ -162,9 +162,9 @@ That's it.
 
 ---
 
-There are many variations on how to approach reconciling a feature branch, master, and origin/master. I have 
+There are many variations on how to approach reconciling a feature branch, master, and origin/master. I have
 depicted only one of them, but if there are others that work better for you, do not hesitate to do what is right
-for you or your team. 
+for you or your team.
 
 I have also specifically omitted formal commits on a feature branch that are tiny enough to merge to master
 without completing the entire story. This is on purpose so as to not complicate the flow in this happy path example.
@@ -172,7 +172,7 @@ I encourage you to add tiny commits that further the story while chipping away a
 
 ## Vocabulary
 
-**Branching** - version control concept of duplicating source code so that modifications can be done in parallel alongside multiple branches. 
+**Branching** - version control concept of duplicating source code so that modifications can be done in parallel alongside multiple branches.
 
 **Branching Model** - a defined pattern of branching.
 
