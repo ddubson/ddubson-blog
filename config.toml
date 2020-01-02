@@ -4,6 +4,7 @@ theme = "m10c"
 title = "Dmitriy Dubson | Blog |"
 
 [params]
+    math = true
     author = "Dmitriy Dubson"
     description = "Senior Software Engineer"
 

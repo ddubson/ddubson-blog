@@ -43,4 +43,7 @@
       {{ end }}
     </main>
   </body>
+  {{ if or .Params.math .Site.Params.math }}
+  {{ partial "math.html" . }}
+  {{ end }}
 </html>
