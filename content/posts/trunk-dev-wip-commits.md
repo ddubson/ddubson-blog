@@ -1,5 +1,5 @@
 ---
-title: "Save with WIP: a git technique in Trunk-Based Development"
+title: "Work-In-Progress (WIP) commits: a git technique in Trunk-Based Development"
 description: ""
 date: 2019-08-04T10:21:07-04:00
 draft: false
@@ -13,7 +13,7 @@ In this post, I want to focus on a specific technique within a specific branchin
 effective at keeping each contributor productive without introducing cognitive overhead of a complex branching model.
 
 The branching model being [Trunk-Based Development](https://trunkbaseddevelopment.com/) and the technique that I'll
-refer to as **"Save with WIP"**, where WIP stands for Work-In-Progress.
+refer to is saving progress with **Work-In-Progress (WIP) commits**.
 
 Trunk-Based Development model encourages merging to the 'trunk' (think of a tree trunk that all branches spring from)
 as often as possible and keeping branches short-lived: no more than a day or so if possible. We claim 'master' branch
@@ -21,17 +21,17 @@ as the trunk.
 
 > Read more about the benefits of [Trunk Based Development](https://trunkbaseddevelopment.com/)
 
-To that effect, the technique **"Save with WIP"** encourages small save commits that are temporary and will never make
+To that effect, the WIP commit technique encourages small save commits that are temporary and will never make
 it to the trunk, i.e. 'master' branch. This technique helps us create checkpoints at some predetermined stopping points
 in your development flow. I think of cases when I have to leave for the day or go to a meeting at a not-so-clean point
 in my feature story.
 
 Here's how it goes.
 
-## Save with WIP
+## Work-in-Progress (WIP) commits
 
-Clone the git repository as the first step if you don't already have it on your machine. I'm using a fake git
-repository to drive out this example alongside a phantom product.
+I have cloned a Git repository to my machine being a new team member on any given team that is using Trunk-Based Development branching model.
+I'm using a fake git repository to drive out this example alongside a phantom product.
 
 {{<highlight bash>}}
 git clone https://github.com/ddubson/my-repo.git
@@ -53,7 +53,7 @@ The name format of the branch follows **[short-description-of-story]-[story-id]*
 
 Now we can write some code for this feature story...
 
-Once we have a stopping point that isn't the end of the story, we can utilize **Save with WIP** technique
+Once we have a stopping point that isn't the end of the story, we can utilize WIP commit technique
 
 The steps are:
 

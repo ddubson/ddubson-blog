@@ -31,7 +31,7 @@ f :: Int -> Int
 f x = 2 * x + 3
 {{</highlight>}}
 
-In this example, the function maps an integer type to an integer type, as per Haskell's type signature on the first line. Some examples of this function's invokation are:
+In this example, the function maps an integer type to an integer type, as per Haskell's type signature on the first line. Some examples of this function's invocation are:
 
 {{<highlight bash>}}
 Prelude> f 2
