@@ -1,7 +1,7 @@
 ---
 title: "What's a Functor?"
 date: 2020-04-05T12:15:35-04:00
-draft: true
+draft: false
 ---
 
 At the highest level of abstraction, a **functor** is a concept in Category Theory, a branch of mathematics that formalizes relationships between abstract objects via formal rules in any given collection of objects, referred to as **Categories**. A functor is the mapping of one category to another category. That's a pretty loaded sentence, but no worries, we shouldn't get bogged down with abstract theory to continue on our journey in understanding functors.
