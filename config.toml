@@ -14,7 +14,7 @@ googleAnalytics = ""
     backgroundColor = "#FBE9E7"
     font = "Fira Code" # should match the name on Google Fonts!
     highlight = true
-    highlightStyle = "default"
+    highlightStyle = "gruvbox-dark"
     highlightLanguages = ["haskell", "kotlin", "java"]
 
 [[menu.main]]
@@ -28,7 +28,7 @@ googleAnalytics = ""
 #     weight = 2
 
 [[menu.main]]
-    url = "/post/"
+    url = "/posts/"
     name = "Posts"
     weight = 2
 

@@ -3,6 +3,7 @@ title: "Work-In-Progress (WIP) commits: a git technique in Trunk-Based Developme
 description: ""
 date: 2019-08-04T10:21:07-04:00
 draft: false
+tags: ["git", "technique", "trunk-based-development"]
 ---
 
 When building a software product on a team, to create an effective and sustainable development flow, one needs to abide
