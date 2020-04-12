@@ -14,9 +14,10 @@ googleAnalytics = ""
     backgroundColor = "#FBE9E7"
     font = "Fira Code" # should match the name on Google Fonts!
     highlight = true
+    disableComments = false
     highlightStyle = "gruvbox-dark"
     highlightLanguages = ["haskell", "kotlin", "java", "typescript", "javascript"]
-    copyright = "Made and curated with 🧡in New York"
+    copyright = "Made and curated with 🧡 in New York"
 
 [[menu.main]]
     url = "/"
@@ -29,7 +30,7 @@ googleAnalytics = ""
 #     weight = 2
 
 [[menu.main]]
-    url = "/posts/"
+    url = "/post/"
     name = "Posts"
     weight = 2
 
