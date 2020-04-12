@@ -46,7 +46,8 @@ Let's turn to Haskell, where functors can be expressed very explicitly.
 
 ## Functors in Haskell
 
-In Haskell, typeclasses define some behavior of a type, and for any given type
+In Haskell, [typeclasses](http://book.realworldhaskell.org/read/using-typeclasses.html)
+define some behavior of a type, and for any given type
 to adhere to that behavior, it must implement the typeclass' functions.
 
 For example, this is the canonical functor typeclass in Haskell
@@ -74,7 +75,8 @@ We can take a look at how a List and a String implement the Functor typeclass
 instance Functor [] where
     fmap = map
 
--- Since a String is really a synonym for list of characters, then the definition for a Functor is the same
+-- Since a String is really a synonym for list of characters, then the
+-- definition for a Functor is the same
 -- as the definition for a plain list! In the case of a String, each mapped element
 -- is a of Char type
 {{</highlight>}}
@@ -83,29 +85,62 @@ A way of reading that instantiation is:
 
 **For type [] (i.e. list), fmap function is defined as _map_ function**
 
+---
+
 It happens that list already has an underlying _map_ function that has the same
 signature, and so for a list to be a functor is no sweat at all!
 
-Here's an example of mapping over a list and a String.
+Here's an example of functors in action:
+
+#### List of integers
 
 ```haskell
-fmap (\e -> e * 2) [1,2,3]
+-- Explicit fmap
+fmap (\e -> e * 2) [1,2,3] -- a list of integers
 -- > [2,4,6]
 
-fmap (\e -> toUpper e) "Hello World"
--- > "HELLO WORLD"
-
--- More succinct way of applying fmap is via infix <$> operator,
--- and using point-free style function definitions
+-- Simplified infix operator for fmap and point-free style chaining
 (*2) <$> [1,2,3]
-toUpper <$> "Hello World"
+-- > [2,4,6]
 ```
 
-This is read as: **call function fmap where the first parameter is a lambda
+#### A string
+
+```haskell
+-- Explicit fmap
+fmap (\e -> toUpper e) "Hello World" -- a string
+-- > "HELLO WORLD"
+
+-- Simplified infix operator for fmap and point-free style chaining
+toUpper <$> "Hello World"
+-- > "HELLO WORLD"
+```
+
+#### A Maybe of a string
+
+```haskell
+-- Explicit fmap
+fmap (\e -> e ++ "!") (Just "Hello World") -- a Maybe of a string
+-- > Just "Hello World!"
+fmap (\e -> e ++ "!") Nothing -- Maybe of a string
+-- > Nothing
+
+-- Simplified infix operator for fmap and point-free style chaining
+(++"!") <$> Just "Hello World"
+-- > Just "Hello World!"
+(++"!") <$> Nothing
+-- > Nothing
+```
+
+The above examples can be read as:
+
+
+**call function fmap where the first parameter is a lambda
 function and the second parameter is a type that is a functor
 (i.e. list, string)**
 
-And here it is visually:
+---
+And here it is visually (list of integers, strings):
 
 ![](/images/functors/functors-2.svg)
 
