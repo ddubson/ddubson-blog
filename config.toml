@@ -13,6 +13,7 @@ googleAnalytics = ""
     showBorder = true
     backgroundColor = "#FBE9E7"
     font = "Fira Code" # should match the name on Google Fonts!
+    css = ["/css/extend.css"]
     highlight = true
     disableComments = false
     highlightStyle = "gruvbox-dark"
@@ -24,20 +25,20 @@ googleAnalytics = ""
     name = "Home"
     weight = 1
 
-# [[menu.main]]
-#     url = "/about/"
-#     name = "About"
-#     weight = 2
-
 [[menu.main]]
     url = "/post/"
     name = "Posts"
     weight = 2
 
 [[menu.main]]
+    url = "/garden/"
+    name = "The Digital Garden"
+    weight = 3
+
+[[menu.main]]
      url = "https://hackmd.io/@ddubson/B1mQzbCdL"
      name = "Tech Playlist 📻"
-     weight = 3
+     weight = 4
 
 # Social icons to be shown on the right-hand side of the navigation bar.
 # The "name" field should match the name of the icon in Font Awesome.
