@@ -15,3 +15,9 @@ A set of exercises to help those on their journey to learn the functional progra
 |> [.NET Core Cookbook](https://dotnet-cookbook.dmitriydubson.com)
 
 A cookbook for the .NET Core traveler.
+
+---
+
+|> [Extreme Programming Guide](https://github.com/ddubson/xp-guides/blob/master/extreme-programming.md)
+
+An extremely concise guide to extreme programming.
