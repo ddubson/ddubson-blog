@@ -21,3 +21,9 @@ A cookbook for the .NET Core traveler.
 |> [Extreme Programming Guide](https://github.com/ddubson/xp-guides/blob/master/extreme-programming.md)
 
 An extremely concise guide to extreme programming.
+
+---
+
+|> [How to install a JDK](https://hackmd.io/@ddubson/SJOcx1sQ8)
+
+An ever-changing doc on how to properly install a JDK on a machine.
