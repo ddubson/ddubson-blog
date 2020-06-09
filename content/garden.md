@@ -27,3 +27,9 @@ An extremely concise guide to extreme programming.
 |> [How to install a JDK](https://hackmd.io/@ddubson/SJOcx1sQ8)
 
 An ever-changing doc on how to properly install a JDK on a machine.
+
+---
+
+|> [nmap cheatsheet](https://gist.github.com/ddubson/45d9ed28ba2cbd18ecfff893c9c50534)
+
+Quick list of examples for running common nmap scenarios.
