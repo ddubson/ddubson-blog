@@ -6,6 +6,12 @@ draft: false
 
 ---
 
+|> [Quick Look-up Cheatsheets](https://cheatsheets.dmitriydubson.com/)
+
+When it's too tiresome to look up basic commands and constructs via StackOverflow.
+
+---
+
 |> [Functional Programming (FP) katas](https://github.com/ddubson/functional-programming-katas)
 
 A set of exercises to help those on their journey to learn the functional programming paradigm.
