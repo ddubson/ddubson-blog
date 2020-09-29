@@ -24,6 +24,12 @@ A cookbook for the .NET Core traveler.
 
 ---
 
+|> [C++ Notebook](https://cpp.dmitriydubson.com)
+
+Learning C++ and writing it down.
+
+---
+
 |> [Extreme Programming Guide](https://github.com/ddubson/xp-guides/blob/master/extreme-programming.md)
 
 An extremely concise guide to extreme programming.
