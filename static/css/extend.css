@@ -1,5 +1,25 @@
+body {
+    font-size: 16px !important;
+}
+
+p {
+    font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  text-rendering: optimizelegibility !important;
+}
+
 hr {
     border-top: 1px solid #DDD !important;
+}
+
+.item {
+    text-align: left;
+}
+
+.page-title, .page-subtitle, .page-tags {
+    text-align: left;
 }
 
 .content {
