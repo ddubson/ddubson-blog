@@ -1,3 +1,14 @@
 hr {
     border-top: 1px solid #DDD !important;
 }
+
+.content {
+    text-align: justify;
+    line-height: 2.2rem;
+}
+
+.content blockquote {
+    background-color: lavender;
+    font-size: 14px;
+    border-left: var(--border-width) solid var(--accent);
+}
