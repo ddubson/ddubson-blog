@@ -2,6 +2,7 @@
 title: "An introduction to Flux and Mono"
 date: 2018-12-30T10:00:00-04:00
 draft: false
+description: "A look into implementations of Reactive concepts in the Java ecosystem."
 tags: ["Reactive-Programming", "Project-Reactor", "Reactive-Streams"]
 ---
 

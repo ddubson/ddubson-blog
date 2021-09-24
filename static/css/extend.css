@@ -2,6 +2,10 @@ body {
     font-size: 16px !important;
 }
 
+main {
+    max-width: 1024px;
+}
+
 p {
     font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
@@ -10,8 +14,16 @@ p {
   text-rendering: optimizelegibility !important;
 }
 
+pre {
+    margin: 20px 0px;
+}
+
 hr {
     border-top: 1px solid #DDD !important;
+}
+
+.intro h1 {
+    font-size: 6vh;
 }
 
 .item {
@@ -31,4 +43,6 @@ hr {
     background-color: lavender;
     font-size: 14px;
     border-left: var(--border-width) solid var(--accent);
+    padding: 20px 30px;
+    margin: 30px 0px;
 }

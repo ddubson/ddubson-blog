@@ -3,6 +3,7 @@ title: "Work-In-Progress (WIP) commits: a git technique in Trunk-Based Developme
 description: ""
 date: 2019-08-04T10:21:07-04:00
 draft: false
+description: "Practical git technique for saving work during a long running story."
 tags: ["git", "technique", "trunk-based-development"]
 ---
 

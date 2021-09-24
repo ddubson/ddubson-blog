@@ -2,6 +2,7 @@
 title: "No substitutions for Liskov Substitution Principle (LSP)"
 date: 2019-03-15T10:00:00-04:00
 draft: false
+description: "A look into a fundamental concept of object-oriented design."
 tags: ["Clean-Architecture", "Clean-Code", "Liskov-Substitution-Principle", "LSP", "Kotlin"]
 ---
 

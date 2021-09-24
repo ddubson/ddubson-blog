@@ -1,17 +1,18 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "blog |> ✨"
+title = "Technical narratives and other tales. ✨"
 theme = "minimal"
 disqusShortname = "dmitriydubson" # delete this to disable disqus comments
 googleAnalytics = ""
 
 [params]
     author = "Dmitriy Dubson"
-    description = " by Dmitriy Dubson"
+    description = " written ✚ curated by Dmitriy Dubson"
     githubUsername = "ddubson"
     accent = "#E65100"
     showBorder = true
     backgroundColor = "#fffbfa"
+    profilePic = "/avatar.jpg"
     font = "Inconsolata" # should match the name on Google Fonts!
     css = ["css/extend.css"]
     highlight = true

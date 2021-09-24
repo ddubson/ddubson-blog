@@ -1,7 +1,8 @@
 ---
-title: "FP Concepts => Functors"
+title: "What's a Functor?"
 date: 2020-04-05T12:15:35-04:00
 draft: false
+description: "A brief look at the functional programming concept of functors."
 tags: ["functional programming", "functor", "category theory", "haskell", "data types"]
 ---
 

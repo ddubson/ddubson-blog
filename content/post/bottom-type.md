@@ -2,12 +2,13 @@
 title: "Bottom Type and The Halting Problem"
 date: 2019-12-16T20:50:45-05:00
 draft: false
+description: "A look into the concept of a bottom type and related Halting Problem."
 tags: ["type theory", "data-types", "bottom-type", "halting-problem"]
 ---
 
 In my learnings on Category Theory, I've come across a concept that I have not
-heard of before but have been using almost daily. It is the concept of a
-**bottom**.
+heard of before but have been using almost daily. It is the concept of the
+**bottom type**.
 
 Given a mathematical function, for example:
 

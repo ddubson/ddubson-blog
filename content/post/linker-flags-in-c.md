@@ -2,6 +2,7 @@
 title: "Setting linker flags in CMake"
 date: 2019-01-08T10:00:00-04:00
 draft: false
+description: "How to link libraries to your C++ project within a Makefile."
 tags: ["CMake", "C++", "Linking libraries", "CMakeLists.txt", "LDFLAGS"]
 ---
 
