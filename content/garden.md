@@ -12,12 +12,6 @@ When it's too tiresome to look up basic commands and constructs via StackOverflo
 
 ---
 
-|> [Kubernetes Command Cheatsheet](https://k8s.dmitriydubson.com/)
-
-Kubernetes (K8s) needs its own cheatsheet, that's for sure.
-
----
-
 |> [Functional Programming (FP) katas](https://github.com/ddubson/functional-programming-katas)
 
 A set of exercises to help those on their journey to learn the functional programming paradigm.
