@@ -14,3 +14,4 @@ hugo.darwin
 hugo.linux
 
 # End of https://www.gitignore.io/api/hugo
+.hugo_build.lock

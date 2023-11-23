@@ -1,2 +1,2 @@
 serve:
-	@hugo serve --disableFastRender --ignoreCache
+	@hugo serve -D --disableFastRender --ignoreCache
