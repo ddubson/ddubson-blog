@@ -1,7 +1,7 @@
 ---
 title: "Kit"
 description: "Development kit"
-draft: true
+draft: false
 ---
 
 * Terminal: [Kitty](https://github.com/kovidgoyal/kitty)
