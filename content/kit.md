@@ -12,5 +12,6 @@ draft: false
     * Plugin: nvim-tree
     * Plugin: catppuccin/nvim
 * Utilities
+    * Fuzzy finder: [fzf](https://github.com/junegunn/fzf)
     * File Manager: [lf](https://github.com/gokcehan/lf) (list files)
     * File Viewer: [bat](https://github.com/sharkdp/bat) (improved cat)
