@@ -10,7 +10,9 @@ draft: false
 * IDE: JetBrains series
 * IDE: [NeoVIM](https://neovim.io/)
     * Plugin: nvim-tree
-    * Plugin: catppuccin/nvim
+    * Plugin: catppuccin/nvim    
+* Terminal multiplexing: [tmux](https://github.com/tmux/tmux)
+    * Theme: [catppuccin (frappe)](https://github.com/catppuccin/tmux)
 * Utilities
     * Fuzzy finder: [fzf](https://github.com/junegunn/fzf)
     * File Manager: [lf](https://github.com/gokcehan/lf) (list files)
