@@ -18,3 +18,4 @@ draft: false
     * File Manager: [lf](https://github.com/gokcehan/lf) (list files)
     * File Viewer: [bat](https://github.com/sharkdp/bat) (improved cat)
     * Speedy search: [ag](https://github.com/ggreer/the_silver_searcher)
+    * File jumper: [z](https://github.com/rupa/z)
