@@ -8,7 +8,7 @@ draft: false
 * All-around theme: [catppuccin (frappe)](https://github.com/catppuccin/catppuccin)
 * Terminal (Linux/MacOS): [Kitty](https://github.com/kovidgoyal/kitty)
     * Prompt: [Starship](https://starship.rs/)
-* Terminal (Windows): [ConEmu](https://conemu.github.io/) + [PowerShell](https://github.com/PowerShell/PowerShell)
+* Terminal (Windows): Windows Terminal + [PowerShell](https://github.com/PowerShell/PowerShell)
     * Prompt: [Oh My Posh](https://ohmyposh.dev/) + [catppuccin theme (frappe)](https://ohmyposh.dev/docs/themes#catppuccin_frappe)
 * Terminal multiplexing: [tmux](https://github.com/tmux/tmux)
     * Theme: [catppuccin (frappe)](https://github.com/catppuccin/tmux)
