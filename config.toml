@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Technical narratives and other tales. ✨"
+title = "✨"
 theme = "minimal"
 disqusShortname = "dmitriydubson" # delete this to disable disqus comments
 googleAnalytics = ""
@@ -56,11 +56,6 @@ googleAnalytics = ""
     weight = 1
 
 [[menu.icon]]
-    url = "https://twitter.com/DmitriyAtHome/"
-    name = "twitter"
-    weight = 2
-
-[[menu.icon]]
     url = "https://www.linkedin.com/in/ddubson1/"
     name = "linkedin"
-    weight = 3
+    weight = 2
